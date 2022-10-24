@@ -302,11 +302,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4.2rem;
+  margin-top: 1.2rem;
 }
 .contact-form form{
   position: relative;
   width: 550px;
+}
+.contact a{
+  padding-right:20px;
+  font-size: 25px;
+  color: white;
 }
 form input,
 form textarea{
