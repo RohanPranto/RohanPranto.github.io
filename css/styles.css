@@ -199,7 +199,7 @@ section {
 
 .service-content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   grid-gap: 2rem;
   align-items: center;
   margin-top: 4.4rem;
@@ -257,7 +257,7 @@ section {
 }
 .resume-content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   grid-gap: 3rem;
   align-items: center;
   margin-top: 4.4rem;
