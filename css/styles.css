@@ -181,6 +181,9 @@ section {
   line-height: 1.8rem;
   color: var(--2nd-main-color);
 }
+.about-text p a{
+  color:#2192FF;
+}
 .main-btn .btn{
   margin-right: 20px;
 }
