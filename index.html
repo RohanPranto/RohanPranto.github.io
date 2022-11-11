@@ -68,6 +68,35 @@
     </div>
 
   </section>
+  <!-- start audio -->
+  <section class="audio-sec">
+    <div class="confused-img">
+      <img src="confused.png" alt="confused">
+    </div>
+    <div class="audio-text">
+      <h2>Why BTech?<br>Why Engineering!</h2>
+      <img src="play.png" id="icon">
+    </div>
+    <audio id="mySong">
+      <source src="degree.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+      var mySong = document.getElementById("mySong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function() {
+        if(mySong.paused){
+          mySong.play();
+          icon.src = "pause.png";
+        }else{
+          mySong.pause();
+          icon.src = "play.png";
+        }
+      }
+    </script>
+  </section>
+  
   <!-- START SERVICES -->
   <section class="services" id="services">
     <div class="center">
