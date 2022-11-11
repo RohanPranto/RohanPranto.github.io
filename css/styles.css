@@ -196,7 +196,29 @@ section {
   font-weight: 300;
   letter-spacing: 6px;
 }
-
+.audio-sec{
+  padding-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 5rem;
+  align-items: center;
+}
+.audio-sec h2{
+  position: relative;
+}
+.audio-text img{
+  padding-top: 15px;
+}
+.confused-img img{
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(10px 10px 10px black);
+}
+#icon{
+  cursor: pointer;
+  width: 55px;
+}
 .service-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, auto));
