@@ -26,7 +26,6 @@
 <!-- <h3 align="center">Languages that I know:</h3> -->
 
 
-<div align="center">
     <p><img align="center"
             src="https://github-readme-stats.vercel.app/api?username=RohanPranto&show_icons=true&locale=en"
             alt="RohanPranto" /></p>
@@ -37,4 +36,4 @@
 
     <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RohanPranto&"
             alt="RohanPranto" /></p>
-</div>
+
