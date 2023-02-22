@@ -26,8 +26,10 @@
 <!-- <h3 align="center">Languages that I know:</h3> -->
 
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Rohanpranto&show_icons=true&locale=en&layout=compact" alt="Rohanpranto" /></p>
+<div align="center">
+        <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Rohanpranto&show_icons=true&locale=en&layout=compact" alt="Rohanpranto" /></p> <br>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Rohanpranto&show_icons=true&locale=en" alt="Rohanpranto" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Rohanpranto&show_icons=true&locale=en" alt="Rohanpranto" /></p> <br>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Rohanpranto&" alt="RohanPranto" /></p>
+</div>
