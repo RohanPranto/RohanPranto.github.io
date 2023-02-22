@@ -26,14 +26,8 @@
 <!-- <h3 align="center">Languages that I know:</h3> -->
 
 
-    <p><img align="center"
-            src="https://github-readme-stats.vercel.app/api?username=RohanPranto&show_icons=true&locale=en"
-            alt="RohanPranto" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=subh839&show_icons=true&locale=en&layout=compact" alt="subh839" /></p>
 
-    <p><img align="center"
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=RohanPranto&show_icons=true&locale=en&layout=compact"
-            alt="RohanPranto" /></p> 
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=subh839&show_icons=true&locale=en" alt="subh839" /></p>
 
-    <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RohanPranto&"
-            alt="RohanPranto" /></p>
-
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=subh839&" alt="subh839" /></p>
