@@ -27,5 +27,14 @@
 
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=RohanPranto&show_icons=true&locale=en" alt="">
+    <p><img align="center"
+            src="https://github-readme-stats.vercel.app/api?username=RohanPranto&show_icons=true&locale=en"
+            alt="RohanPranto" /></p>
+
+    <p><img align="center"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=RohanPranto&show_icons=true&locale=en&layout=compact"
+            alt="RohanPranto" /></p> 
+
+    <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=RohanPranto&"
+            alt="RohanPranto" /></p>
 </div>
