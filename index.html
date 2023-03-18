@@ -9,11 +9,17 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- <style>
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+  </style> -->
 
 </head>
 
@@ -22,6 +28,12 @@
   <!-- HEADER -->
   <header>
     <a href="#" class="logo">Portfo<span>lio</span> </a>
+    <button id="theme-toggle">
+      <span class="toggle-icon">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </span>
+    </button>
     <div class="bx bx-menu" id="menu-icon"></div>
 
     <ul class="navbar">
@@ -30,23 +42,29 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
-    </ul>
+      <li><a href="#projects">Projects</a></li>
+
 
 
   </header>
 
   <!-- START HOME -->
+
   <section class="home" id="home">
+
     <div class="home-text">
+
       <h5>Hello, I am</h5>
       <h1>Rohan Biswas</h1>
-      <h6>I'm a <span class="input"></span></h6>
-      <p>I develop websites for customers. I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript. Just like Captain America, <br> "I can do this all day!"</p>
-      <a href="https://drive.google.com/file/d/1Ky7RqE-7Khfg-J3dWsxWQlaSn95WqRe_/view?usp=sharing" class="btn"><strong>Download CV</strong></a>
+      <h5>I'm a <span style="color: var(--main-color);" class="input"></span></h5>
+      <p>I develop frontend websites for customers. I spend my whole day, practically every day, experimenting with HTML, CSS,
+        and JavaScript. Just like Captain America, <br> "I can do this all day!"</p>
+      <a href="https://drive.google.com/file/d/1Npfv2WZ9zE_zXsAtFvl3-9bIg7yt0QZB/view?usp=sharing"
+        class="btn"><strong>Download CV</strong></a>
     </div>
 
     <div class="home-img">
-      <img src="css/rohanb.png" alt="">
+      <img src="css/rohan.png" alt="">
 
     </div>
   </section>
@@ -60,7 +78,9 @@
     <div class="about-text">
       <h3>About Me</h3>
       <h2>A freelancer Front-end Developer who loves Burger and Momo. Obviously Momo first!</h2>
-      <p>I am from Kolkata,India. Studying BTech at <a href="https://uem.edu.in/uem-kolkata/">UEM,Kolkata</a>.I code and create web elements for amazing people around the world. I like to work with new people. New people, New experience!</p>
+      <p>I am from Kolkata,India. Studying BTech at <a href="https://uem.edu.in/uem-kolkata/">UEM,Kolkata</a>.I code and
+        create web elements for amazing people around the world. I like to work with new people. New people, New
+        experience!</p>
       <div class="main-btn">
         <a href="#contact" class="btn"><strong>Contact Me</strong></a>
         <a href="#resume" class="btn"><strong>Portfolio</strong></a>
@@ -70,7 +90,7 @@
   </section>
   <!-- start audio -->
   <section class="audio-sec">
-    <div class="confused-img">
+    <div class="confused-img" style="text-align: center;">
       <img src="confused.png" alt="confused">
     </div>
     <div class="audio-text">
@@ -85,18 +105,27 @@
       var mySong = document.getElementById("mySong");
       var icon = document.getElementById("icon");
 
-      icon.onclick = function() {
-        if(mySong.paused){
+      icon.onclick = function () {
+        if (mySong.paused) {
           mySong.play();
           icon.src = "pause.png";
-        }else{
+        } else {
           mySong.pause();
           icon.src = "play.png";
         }
       }
     </script>
   </section>
-  
+
+
+
+
+
+
+
+
+
+
   <!-- START SERVICES -->
   <section class="services" id="services">
     <div class="center">
@@ -107,9 +136,10 @@
 
       <div class="row">
         <i class='bx bx-desktop'></i>
-        <h3>Web development</h3>
-        <p>For the duration of your project and beyond, we’ll work closely together to ensure that your website fits your individual needs, vision, and style.</p>
+        <h3>Frontend Web Dev</h3>
+        <p>For the duration of your project and beyond, we’ll work closely together to ensure that your website fulfills all your needs!</p>
       </div>
+
 
       <div class="row">
         <i class='bx bxs-camera'></i>
@@ -123,21 +153,59 @@
         <p>Oh Hey, Am also a part time guitarist,singer XD .Lets jam together one day at a cafe? <br> See you! </p>
       </div>
 
+    </div>
+  </section>
+
+<!-- my projects -->
+<section class="services" id="projects">
+    <div class="center">
+      <h3>PROJECTS</h3>
+    </div>
+
+    <div class="service-content projects">
+
       <div class="row">
-        <i class='bx bxl-flutter'></i>
-        <h3>App Development</h3>
-        <p>On my way to complete the app development course using Flutter. See you soon on my portfolio header section!</p>
+        <img src="css/portfolio_momo.png" width="100%"  alt="">
+        <h3><a href="https://monjimalahiri.me/">Portfolio</a> ⧁ </h3>
+        <p>This is a portfolio of Monjima Lahiri. Used only HTML,CSS and JS to create. It was fun!</p>
+      </div>
+
+
+      <div class="row">
+        <img src="css/safari.png" width="100%"  alt="">
+        <h3><a href="https://rohanbiswas.me/safari">Safari</a> ⧁ </h3>
+        <p>I love traveling. So, here’s my website for if I ever had to open a travel agency. Who knows?</p>
+      </div>
+
+      <div class="row">
+        <img src="css/uem.png" width="100%"  alt="">
+        <h3><a href="https://rohanbiswas.me/uem">UEM</a> ⧁ </h3>
+        <p>Our college website doesnt look that good. so I gave it a try to redesign our college's website.</p>
+      </div>
+      <div class="row">
+        <img src="css/jobforall.png" width="100%"  alt="">
+        <h3><a href="https://rohanbiswas.me/oneclick">JobForAll</a> ⧁ </h3>
+        <p>A website where daily labours will find customers and vice-versa. Created this for our startup project.</p>
+      </div>
+      <div class="row">
+        <img src="css/tools.png" width="100%"  alt="">
+        <h3><a href="https://rohanbiswas.me/tools">Tools</a> ⧁ </h3>
+        <p>It's a website where you'll find a lots of tools added like weather, tictactoe, calculator etc!</p>
+      </div>
+      <div class="row">
+        <i class='bx bxl-github'></i>
+        <h3>For more...</h3>
+        <p>Visit <a style="color: white;text-decoration: underline;" href="https://github.com/RohanPranto">My Github</a> for more & more projects! </p>
       </div>
 
     </div>
   </section>
 
 
-
   <!-- CTA -->
   <section class="cta" id="class">
-    <h4>Have Any Project In Your Mind</h4>
-    <h2>Just Say Hello</h2>
+    <h4>Have A Project In Your Mind ?</h4>
+    <h2>Just Say <br>"Hello"</h2>
     <a href="#contact" class="btn"> <strong>Hire Me</strong> </a>
   </section>
 
@@ -146,7 +214,7 @@
 
   <section class="resume" id="resume">
     <div class="center">
-      <h3>Education & Experience</h3>
+      <h3>Education</h3>
     </div>
 
     <div class="resume-content">
@@ -168,6 +236,12 @@
         <h5>University of Engineering And Management</h5>
       </div>
 
+      <div class="box">
+        <h6>2022</h6>
+        <h4>Web Development Course</h4>
+        <h5>Angela YU, Coursera, Meta & more.</h5>
+      </div>
+
     </div>
 
   </section>
@@ -177,12 +251,12 @@
   <!-- CONTACT ME -->
   <section class="contact" id="contact">
     <div class="center">
-      <h3 style="font-weight:bold">Contact Me</h3>
+      <h3>Contact Me</h3>
       <br>
       <a href="https://www.facebook.com/r.biswasz"><i class="fa-brands fa-square-facebook"></i></a>
       <a href="https://www.instagram.com/rohanpraanto/"><i class="fa-brands fa-square-instagram"></i></a>
       <a href="https://www.linkedin.com/in/rohan-biswas-178848239/"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/RohanPranto"><i class="fa-brands fa-square-github"></i></a>
+      <a href="github.com/rohanpranto"><i class="fa-brands fa-square-github"></i></a>
     </div>
 
     <div class="contact-form">
@@ -194,8 +268,6 @@
         <input type="submit" name="" value="Send" class="send-btn">
       </form>
     </div>
-
-    </div>
   </section>
 
   <!-- COPYRIGHT -->
@@ -206,6 +278,8 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- LINK TO JS -->
   <script src="js/script.js" charset="utf-8"></script>
+
+  <script src="script.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     var Typed = new Typed(".input", {
@@ -219,6 +293,13 @@
       backSpeed: 60,
       loop: true,
 
+    });
+
+    const toggleModeBtn = document.getElementById("toggle-mode");
+    const body = document.body;
+
+    toggleModeBtn.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
     });
   </script>
 </body>
