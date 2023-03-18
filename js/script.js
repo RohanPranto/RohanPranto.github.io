@@ -1,3 +1,20 @@
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.querySelector('#theme-toggle .toggle-icon');
+const moonIcon = document.querySelector('#theme-toggle .fa-moon');
+const sunIcon = document.querySelector('#theme-toggle .fa-sun');
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    moonIcon.style.opacity = '1';
+    sunIcon.style.opacity = '0';
+    themeIcon.style.transform = 'translateX(26px)';
+  } else {
+    moonIcon.style.opacity = '0';
+    sunIcon.style.opacity = '1';
+    themeIcon.style.transform = 'translateX(0)';
+  }
+});
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
