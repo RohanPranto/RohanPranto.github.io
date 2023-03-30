@@ -43,6 +43,8 @@ header {
 
 .navbar {
   display: flex;
+  position: absolute;
+  right: 13%;
 }
 
 .navbar a {
