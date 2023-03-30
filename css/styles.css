@@ -160,7 +160,9 @@ section {
   max-width: 100%;
   width: 600px;
   height: auto;
-  filter: drop-shadow(10px 10px 10px black);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.593));
+  border-radius: 50%;
+  border: 7px solid white;
 }
 
 .home-text h5 {
@@ -222,7 +224,7 @@ section {
   width: 580px;
   height: auto;
   margin-bottom: 25px;
-  filter: drop-shadow(10px 10px 10px black);
+  filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.593));
 }
 .about-text h3{
   font-size: 30px;
