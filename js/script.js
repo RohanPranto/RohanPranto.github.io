@@ -29,8 +29,8 @@ window.onscroll = () => {
 };
 
 const sr = ScrollReveal({
-  distance: '25px',
-  duration: 1200,
+  distance: '100px',
+  duration: 2000,
   reset: true
 })
 sr.reveal('.home-text', {
@@ -41,7 +41,7 @@ sr.reveal('.home-img', {
   delay: 180,
   origin: 'top'
 })
-sr.reveal('.about, .services, .cta, .resume, .contact, .copyright', {
-  delay: 180,
-  origin: 'top'
+sr.reveal('.about, .services, .cta, .audio-sec, .resume, .contact, .copyright', {
+  delay: 240,
+  origin: 'bottom'
 })
