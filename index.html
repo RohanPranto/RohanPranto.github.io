@@ -94,10 +94,36 @@
       <img src="confused.png" alt="confused">
     </div>
     <div class="audio-text">
-      <h2>Why BTech?<br>Why Engineering!</h2>
-      <img src="play.png" id="icon">
+      <h2>Why BTech?<br>Why Engineering!</h2> <br>
+      <!-- <img src="play.png" id="icon"> -->
+      <audio id="myAudio" src="degree.mp3"></audio>
+    <button style="font-size: 18px;" id="playButton" class="btn" onclick="playPause()"><i class='bx bx-play-circle'></i>Play</button>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+        var playButton = document.getElementById("playButton");
+
+        function playPause() {
+            if (audio.paused) {
+                audio.play();
+                playButton.innerHTML = "<i class='bx bx-pause-circle' ></i>Pause";
+            } else {
+                audio.pause();
+                playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
+            }
+        }
+
+        audio.onended = function () {
+            playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
+        };
+    </script>
     </div>
-    <audio id="mySong">
+
+    
+
+    <!-- audio code here -->
+
+    <!-- <audio id="mySong">
       <source src="degree.mp3" type="audio/mp3">
     </audio>
 
@@ -114,7 +140,7 @@
           icon.src = "play.png";
         }
       }
-    </script>
+    </script> -->
   </section>
 
 
