@@ -30,7 +30,11 @@ header {
   justify-content: space-between;
   padding: 24px 14%;
   transition: .3s;
-  background-color: #000000e1;
+  /* background-color: #000000e1; */
+}
+header {
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px); For compatibility with some browsers
 }
 
 .logo {
@@ -51,17 +55,24 @@ header {
   font-size: 1rem;
   padding: 10px 20px;
   font-weight: 500;
-  color: var(--text-color);
+  color: inherit;
 }
 
 .navbar a:hover {
   transition: .3s;
+  color: #2fbf71;
 }
 /* TOGGLER */
 body {
   background-color: #f7f7f7;
   color: #333;
   transition: all 0.5s ease;
+}
+.white-links  {
+  color: white;
+}
+.black-links  {
+  color: black;
 }
 
 body.dark-mode {
@@ -71,7 +82,7 @@ body.dark-mode {
 
 #theme-toggle {
   position: absolute;
-  right: 25px;
+  right: 105px;
   width: 64px;
   height: 36px;
   background-color: #ddd;
