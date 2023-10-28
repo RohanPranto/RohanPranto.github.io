@@ -198,7 +198,7 @@ section {
 .home-text p {
   max-width: 470px;
   font-size: var(--p-font);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -255,7 +255,7 @@ section {
 .about-text p{
   max-width: 570px;
   font-size: var(--p-font);
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.8rem;
 }
@@ -300,19 +300,19 @@ section {
 }
 .service-content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   grid-gap: 2rem;
   align-items: center;
   margin-top: 4.4rem;
 }
 .row{
   background: #0b0b13;
-  padding: 60px 35px;
+  padding: 30px 35px;
   border-radius: 10px;
   cursor: pointer;
   transition: all .4s;
-  height: 356px;
-  width: 326px;
+  height: 376px;
+  width: 100%;
 }
 .row i{
   color: var(--main-color);
@@ -354,12 +354,18 @@ section {
   font-size: 21px;
   padding-left: 5px;
 }
+.projects p{
+  font-size: 16px;
+}
+.projects h3{
+  margin-bottom: 0;
+}
 .cta{
   background: #0b0b13;
   width: 100%;
   padding: 150px 0;
   text-align: center;
-  margin: 100px auto;
+  margin: 40px auto;
 
 }
 
@@ -381,8 +387,9 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   grid-gap: 3rem;
   align-items: center;
-  margin-top: 4.4rem;
+  margin-top: 50px;
 }
+
 .box{
   background: #0b0b13;
   padding: 40px 30px;
@@ -420,6 +427,15 @@ section {
   transform: translateY(-15px);
   box-shadow: 0px 15px 30px 0px rgb(0 0 0/70%);
 }
+
+.resume-content2{
+  display: grid;
+  grid-gap: 3rem;
+  align-items: center;
+  margin-top: 4.4rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .contact-form{
   display: flex;
   align-items: center;
@@ -592,5 +608,10 @@ form .send-btn:hover{
   }
   .about-img{
     order: 2;
+  }
+}
+@media (max-width: 768px) {
+  .resume-content2 {
+    grid-template-columns: 1fr; /* Change to one column for mobile view */
   }
 }
