@@ -490,6 +490,9 @@ form .send-btn:hover{
   color: var(--main-color);
   box-shadow: 4px 4px var(--main-color);
 }
+small{
+  color: #2fbf7089;
+}
 .copyright{
   text-align: center;
   padding: 30px;
