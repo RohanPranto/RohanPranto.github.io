@@ -82,9 +82,9 @@ body.dark-mode {
 
 #theme-toggle {
   position: absolute;
-  right: 105px;
-  width: 64px;
-  height: 36px;
+  right: 115px;
+  width: 50px;
+  height: 28px;
   background-color: #ddd;
   border: none;
   border-radius: 18px;
@@ -97,10 +97,11 @@ body.dark-mode {
 
 #theme-toggle .toggle-icon {
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 28px;
-  height: 28px;
+  top:3px;
+  left: 0px;
+  right: 0px;
+  width: 22px;
+  height: 22px;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -112,7 +113,7 @@ body.dark-mode {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
 }
 
@@ -553,6 +554,7 @@ form .send-btn:hover{
   }
   #menu-icon{
     display: block;
+    font-size: 34px;
   }
   .navbar{
     position: absolute;
