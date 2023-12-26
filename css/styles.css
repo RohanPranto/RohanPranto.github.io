@@ -34,7 +34,7 @@ header {
 }
 header {
   backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  -webkit-backdrop-filter: blur(10px); For compatibility with some browsers
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 .logo {
