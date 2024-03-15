@@ -390,6 +390,34 @@ section {
   align-items: center;
   margin-top: 50px;
 }
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 150px));
+  grid-gap: 3rem;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.skills-content .box {
+  background: #0b0b13;
+  padding: 40px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.skills-content .bx, .skills-content .fa-brands {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .skills-content {
+    grid-template-columns: repeat(2, minmax(40px, 150px));
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-gap: 2rem;
+  }
+}
 
 .box{
   background: #0b0b13;
@@ -619,4 +647,16 @@ small{
   .resume-content2 {
     grid-template-columns: 1fr; /* Change to one column for mobile view */
   }
+}
+.skills-content .box p {
+  visibility: hidden;
+  margin-bottom: 0;
+  color: white;
+  position: absolute;
+  top: 77%; /* Position the <p> tag vertically at the center */
+  left: 50%; /* Position the <p> tag horizontally at the center */
+  transform: translate(-50%, -50%); /* Center the <p> tag */
+}
+.skills-content .box:hover p{
+  visibility: visible;
 }
