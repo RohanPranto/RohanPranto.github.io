@@ -32,11 +32,11 @@
     <ul class="navbar">
       <li><a id="nava" href="#home">Home</a></li>
       <li><a id="nava" href="#services">Services</a></li>
-      <li><a id="nava" href="https://drive.google.com/file/d/1QEWy3n1gcalPFq5ClZsx6cIh3lNtZavw/view?usp=sharing" target="_blank">Resume <i class='bx bx-right-top-arrow-circle' style='color:#ffffff' ></i></a></li>
+      <li><a id="nava" href="#" onclick="window.open(resumelink, '_blank')" target="_blank">Resume <i class='bx bx-right-top-arrow-circle' style='color:#ffffff' ></i></a></li>
       <li><a id="nava" href="#skillset">Skills</a></li>
       <li><a id="nava" href="#projects">Projects</a></li>
       <li><a id="nava" href="#freelance">Works</a></li>
-
+    </ul>
 
 
   </header>
@@ -52,7 +52,7 @@
       <h5>I'm a <span style="color: var(--main-color);" class="input"></span></h5>
       <p>I develop frontend websites. I spend my whole day, practically every day, experimenting with HTML, CSS,
         and JavaScript, Building projects using ReactJS, NextJS, Building app using React Native or learning something new! Just like Captain America, <br> "I can do this all day!"</p>
-      <a href="https://drive.google.com/file/d/1QEWy3n1gcalPFq5ClZsx6cIh3lNtZavw/view?usp=sharing"
+      <a href="#" onclick="window.open(resumelink, '_blank')"
         class="btn" target="_blank"><strong>Download CV</strong></a>
     </div>
 
@@ -76,7 +76,7 @@
         experience!</p>
       <div class="main-btn">
         <a href="#contact" class="btn"><strong>Contact Me</strong></a>
-        <a href="#resume" class="btn"><strong>Portfolio</strong></a>
+        <a href="#" onclick="window.open(resumelink, '_blank')" class="btn"><strong>Portfolio</strong></a>
       </div>
     </div>
 
@@ -441,6 +441,11 @@
   <script src="script.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
+    
+     const resumelink = 'https://drive.google.com/file/d/1CuvfnIGqGc4pUPsyyq8xTmHgfnlL7dcF/view?usp=sharing';
+
+
+
     var Typed = new Typed(".input", {
       strings: [
         "Web Developer",
