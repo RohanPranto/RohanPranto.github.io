@@ -50,7 +50,7 @@ sr.reveal('.home-img', {
   delay: 180,
   origin: 'top'
 });
-sr.reveal('.about, .services, .cta, .audio-sec, .resume, .contact, .copyright, .works, .skills', {
+sr.reveal('.about, .services, .cta, .audio-sec, .resume, .contact, .copyright, .works, .certificates, .skills', {
   delay: 240,
   origin: 'bottom'
 });
