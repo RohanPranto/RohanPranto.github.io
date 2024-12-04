@@ -52,7 +52,6 @@ sr.reveal('.home-img', {
 });
 sr.reveal('.about, .services, .cta, .audio-sec, .resume, .contact, .copyright, .works, .certificates, .skills', {
   delay: 240,
-  origin: 'bottom'
 });
 
 // Check if the user has a preference for dark mode

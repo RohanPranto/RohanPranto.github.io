@@ -283,7 +283,7 @@ section {
 
 .content {
   width: 100%;
-  height: 100%;
+  height: 80%;
   transform-style: preserve-3d;
   transition: transform 700ms;
   box-shadow: 0px 0px 10px 1px #000000ee;
@@ -314,8 +314,8 @@ section {
   position: absolute;
   content: ' ';
   display: block;
-  width: 160px;
-  height: 160%;
+  width: 200%;
+  height: 50%;
   background: linear-gradient(90deg, transparent, #30c272, #20844d, #1b673d, #15e271, transparent);
   animation: rotation_481 5000ms infinite linear;
 }
@@ -422,7 +422,7 @@ section {
   background-color: #ffbb66;
   position: relative;
   filter: blur(15px);
-  animation: floating 2600ms infinite linear;
+  animation: floating 4600ms infinite linear;
 }
 
 #bottom {
@@ -445,7 +445,7 @@ section {
 .certificate-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, auto));
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   align-items: center;
   margin-top: 4.4rem;
 }
@@ -461,13 +461,15 @@ section {
   }
 
   50% {
-    transform: translateY(10px);
+    transform: translateY(30px);
   }
 
   100% {
     transform: translateY(0px);
   }
 }
+
+
 /* certificate */
 .audio-sec{
   padding-top: 0;
@@ -617,10 +619,18 @@ section {
     padding-right: 25px;
     grid-gap: 2rem;
   }
-
+  .certificate-content{
+    grid-gap: 1.7rem;
+  }
   .card_certificate{
     max-width: 100%;
-    height: 290px;
+    height: 240px;
+  }
+  .content{
+    height: 100%;
+  }
+  .certificate-content{
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
   }
 }
 
