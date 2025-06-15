@@ -308,7 +308,7 @@ img {
 }
 
 .card__data {
-  width: 290px;
+  width: 280px;
   background-color: var(--main-color);
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
