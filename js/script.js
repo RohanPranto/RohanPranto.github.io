@@ -39,7 +39,7 @@ window.onscroll = () => {
 
 const sr = ScrollReveal({
   distance: '50px',
-  duration: 2000,
+  duration: 1700,
   reset: true
 });
 sr.reveal('.home-text', {
