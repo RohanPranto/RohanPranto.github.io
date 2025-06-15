@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  </head>
+</head>
 
 <body>
 
@@ -32,7 +32,8 @@
     <ul class="navbar">
       <li><a id="nava" href="#home">Home</a></li>
       <li><a id="nava" href="#services">Services</a></li>
-      <li><a id="nava" href="#" onclick="window.open(resumelink, '_blank')" target="_blank">Resume <i class='bx bx-right-top-arrow-circle' style='color:#ffffff' ></i></a></li>
+      <li><a id="nava" href="#" onclick="window.open(resumelink, '_blank')" target="_blank">Resume <i
+            class='bx bx-right-top-arrow-circle' style='color:#ffffff'></i></a></li>
       <li><a id="nava" href="#projects">Projects</a></li>
       <li><a id="nava" href="#skillset">Skills</a></li>
     </ul>
@@ -50,9 +51,10 @@
       <h1>Rohan Biswas</h1>
       <h5>I'm a <span style="color: var(--main-color);" class="input"></span></h5>
       <p>I develop websites. I spend my whole day, practically every day, experimenting with HTML, CSS,
-        and JavaScript, Building projects using ReactJS, NextJS, Building app using React Native or learning something new! Just like Captain America, <br> "I can do this all day!"</p>
-      <a href="#" onclick="window.open(resumelink, '_blank')"
-        class="btn" target="_blank"><strong>Download CV</strong></a>
+        and JavaScript, Building projects using ReactJS, NextJS, Building app using React Native or learning something
+        new! Just like Captain America, <br> "I can do this all day!"</p>
+      <a href="#" onclick="window.open(resumelink, '_blank')" class="btn" target="_blank"><strong>Download
+          CV</strong></a>
     </div>
 
     <div class="home-img">
@@ -70,7 +72,8 @@
     <div class="about-text">
       <h3>About Me</h3>
       <h2>A freelancer, Web Developer who loves Burger and Momo. Obviously Momo first!</h2>
-      <p>I am from Kolkata,India. Studying BTech at <a href="https://uem.edu.in/uem-kolkata/" target="_blank">UEM,Kolkata</a>.I code and
+      <p>I am from Kolkata,India. Studying BTech at <a href="https://uem.edu.in/uem-kolkata/"
+          target="_blank">UEM,Kolkata</a>.I code and
         create web elements for amazing people around the world. I like to work with new people. New people, New
         experience!</p>
       <div class="main-btn">
@@ -89,26 +92,26 @@
       <h2>Why BTech?<br>Why Engineering!</h2> <br>
       <!-- <img src="play.png" id="icon"> -->
       <audio id="myAudio" src="degree.mp3"></audio>
-    <button  id="playButton" class="btn" onclick="playPause()"><i class='bx bx-play-circle'></i>Play</button>
+      <button id="playButton" class="btn" onclick="playPause()"><i class='bx bx-play-circle'></i>Play</button>
 
-    <script>
+      <script>
         var audio = document.getElementById("myAudio");
         var playButton = document.getElementById("playButton");
 
         function playPause() {
-            if (audio.paused) {
-                audio.play();
-                playButton.innerHTML = "<i class='bx bx-pause-circle' ></i>Pause";
-            } else {
-                audio.pause();
-                playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
-            }
+          if (audio.paused) {
+            audio.play();
+            playButton.innerHTML = "<i class='bx bx-pause-circle' ></i>Pause";
+          } else {
+            audio.pause();
+            playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
+          }
         }
 
         audio.onended = function () {
-            playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
+          playButton.innerHTML = "<i class='bx bx-play-circle'></i>Play";
         };
-    </script>
+      </script>
     </div>
   </section>
 
@@ -123,7 +126,8 @@
       <div class="row">
         <i class='bx bx-desktop'></i>
         <h3>Web Developer</h3>
-        <p>For the duration of your project and beyond, we’ll work closely together to ensure that your website fulfills all your needs! 💻</p>
+        <p>For the duration of your project and beyond, we’ll work closely together to ensure that your website fulfills
+          all your needs! 💻</p>
       </div>
 
       <div class="row">
@@ -136,7 +140,8 @@
       <div class="row">
         <i class='bx bxs-camera'></i>
         <h3>Photography</h3>
-        <p>Photography is my passion - nature is my refuge. Combine the two, and that is where I am most at peace. 📷</p>
+        <p>Photography is my passion - nature is my refuge. Combine the two, and that is where I am most at peace. 📷
+        </p>
       </div>
 
       <div class="row">
@@ -148,8 +153,8 @@
     </div>
   </section>
 
-<!-- my projects -->
-<section class="services" id="projects">
+  <!-- my projects -->
+  <section class="services" id="projects">
     <div class="center">
       <h3>PROJECTS</h3>
     </div>
@@ -158,7 +163,7 @@
 
       <a href="https://rohanbiswas.xyz/monjimalahiri.github.io/" target="_blank">
         <div class="row">
-          <img src="css/portfolio_momo.png" width="100%"  alt="">
+          <img src="css/portfolio_momo.png" width="100%" alt="">
           <h3>Portfolio<i class='bx bx-right-top-arrow-circle'></i></h3>
           <small>Portfolio</small>
           <p>This is a portfolio of Monjima Lahiri. Used only HTML,CSS & JS to create. It was fun!</p>
@@ -168,7 +173,7 @@
 
       <a href="https://draftx.netlify.app" target="_blank">
         <div class="row">
-          <img src="css/blox.png" width="100%"  alt="">
+          <img src="css/blox.png" width="100%" alt="">
           <h3>Drafts - Blogging Website<i class='bx bx-right-top-arrow-circle'></i></h3>
           <small>Fullstack</small>
           <p>Tried to make a blogging website that also works as your personal notebook!</p>
@@ -177,7 +182,7 @@
 
       <a href="https://uemkolkata.netlify.app" target="_blank">
         <div class="row">
-          <img src="css/uem.png" width="100%"  alt="">
+          <img src="css/uem.png" width="100%" alt="">
           <h3>UEM<i class='bx bx-right-top-arrow-circle'></i></h3>
           <small>Frontend</small>
           <p>Our college website doesn't look that good☹️. so I gave it a try to redesign our college's website.</p>
@@ -185,7 +190,7 @@
       </a>
       <a href="https://fast2024.netlify.app" target="_blank">
         <div class="row">
-          <img src="css/filex.png" width="100%"  alt="">
+          <img src="css/filex.png" width="100%" alt="">
           <h3>FastX - File Sharing Platform<i class='bx bx-right-top-arrow-circle'></i></h3>
           <small>Fullstack</small>
           <p>A simple and minimal cross platform secured file-sharing app.</p>
@@ -193,7 +198,7 @@
       </a>
       <a href="https://rohantools.netlify.app" target="_blank">
         <div class="row">
-          <img src="css/tools.png" width="100%"  alt="">
+          <img src="css/tools.png" width="100%" alt="">
           <h3>Tools<i class='bx bx-right-top-arrow-circle'></i> </h3>
           <small>Fullstack</small>
           <p>It's a website where you'll find a lots of tools added like weather, tictactoe, calculator etc!</p>
@@ -202,7 +207,7 @@
 
       <a href="https://dhruv08.netlify.app" target="_blank">
         <div class="row">
-          <img src="css/Dhruv2.png" width="100%"  alt="">
+          <img src="css/Dhruv2.png" width="100%" alt="">
           <h3>Dhruv - Social Media Platform<i class='bx bx-right-top-arrow-circle'></i> </h3>
           <small>Fullstack</small>
           <p>A platform for photographers where they can upload their shots showcasing their talents!</p>
@@ -211,10 +216,11 @@
 
       <a href="https://neighbourgood.netlify.app" target="_blank">
         <div class="row">
-          <img src="css/neighbourgoods.png" width="100%"  alt="">
+          <img src="css/neighbourgoods.png" width="100%" alt="">
           <h3>NeighbourGoods<i class='bx bx-right-top-arrow-circle'></i> </h3>
           <small>Fullstack</small>
-          <p><em style="text-decoration: underline;">My final year project!</em> Here you can sell used goods, buy, trade or share vehicle ride with your nearby people!</p>
+          <p><em style="text-decoration: underline;">My final year project!</em> Here you can sell used goods, buy,
+            trade or share vehicle ride with your nearby people!</p>
         </div>
       </a>
 
@@ -234,275 +240,167 @@
 
   <!-- SKILLS -->
   <div id="skillset" class="skills">
-  <div class="center">
+    <div class="center">
       <h3>SKILLS</h3>
 
-    <div class="skills-content">
-      <div class="box">
-        <i class="fa-brands fa-html5 fa-3x" ></i>
-        <p>HTML</p>
-      </div>
-      <div class="box">
-        <i class="fa-brands fa-css3-alt fa-3x"></i>
-        <p>CSS</p>
-      </div>
-      <div class="box">
-        <i class="fa-brands fa-js fa-3x"></i>
-        <p>JavaScript</p>
-      </div>
-      <div class="box">
-        <i class="fa-brands fa-react fa-3x"></i>
-        <p>ReactJS</p>
-      </div>
-      <div class="box">
-        <i class="fa-brands fa-node fa-3x"></i>
-        <p>NodeJS</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-mongodb bx-lg'></i>
-        <p>MongoDB</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-firebase bx-lg'></i>
-        <p>Firebase</p>
-      </div>
-      <div class="box">
-        <i class='bx bxs-copyright bx-lg'></i>
-        <p>C</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-c-plus-plus bx-lg'></i>
-        <p>C++</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-python bx-lg' ></i>
-        <p>Python</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-java bx-lg' ></i>
-        <p>Java</p>
-      </div>
-      <div class="box"> 
-        <i class='bx bxl-jquery bx-lg' ></i>
-        <p>JQuery</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-bootstrap  bx-lg' ></i>
-        <p>Bootstrap</p>
-      </div>
-      <div class="box">
-        <i class='bx bxl-tailwind-css bx-flip-vertical bx-lg' ></i>
-        <p>TailwindCSS</p>
+      <div class="skills-content">
+        <div class="box">
+          <i class="fa-brands fa-html5 fa-3x"></i>
+          <p>HTML</p>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-css3-alt fa-3x"></i>
+          <p>CSS</p>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-js fa-3x"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-react fa-3x"></i>
+          <p>ReactJS</p>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-node fa-3x"></i>
+          <p>NodeJS</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-mongodb bx-lg'></i>
+          <p>MongoDB</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-firebase bx-lg'></i>
+          <p>Firebase</p>
+        </div>
+        <div class="box">
+          <i class='bx bxs-copyright bx-lg'></i>
+          <p>C</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-c-plus-plus bx-lg'></i>
+          <p>C++</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-python bx-lg'></i>
+          <p>Python</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-java bx-lg'></i>
+          <p>Java</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-jquery bx-lg'></i>
+          <p>JQuery</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-bootstrap  bx-lg'></i>
+          <p>Bootstrap</p>
+        </div>
+        <div class="box">
+          <i class='bx bxl-tailwind-css bx-flip-vertical bx-lg'></i>
+          <p>TailwindCSS</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
   <!-- SKILLS END HERE -->
 
   <!-- Freelancing -->
-    <section class="works" id="freelance">
-      <div class="center">
-        <h3>FREELANCING</h3>
+  <section class="works" id="freelance">
+    <div class="center">
+      <h3>FREELANCING</h3>
+    </div>
+
+    <div class="service-content">
+
+      <div class="row">
+        <i class="fa-solid fa-1"></i>
+        <h3>Frontend Developer</h3>
+        <h5><a target="_blank" style="color: #2fbf71;" href="https://orchidcafe.in">OrchidCafe</a></h5> <br>
+        <p>Developed the Frontend of the business OrchidCafe. Conceptualized and executed the end-to-end creation of
+          "Orchid Cafe" a dynamic e-commerce destination, facilitating seamless browsing, ordering, and payment
+          functionalities for customers. </p>
+
       </div>
-  
-      <div class="service-content">
-  
-        <div class="row">
-          <i class="fa-solid fa-1"></i>
-          <h3>Frontend Developer</h3>
-          <h5><a target="_blank" style="color: #2fbf71;" href="https://orchidcafe.in">OrchidCafe</a></h5> <br>
-          <p>Developed the Frontend of the business OrchidCafe. Conceptualized and executed the end-to-end creation of "Orchid Cafe" a dynamic e-commerce destination, facilitating seamless browsing, ordering, and payment functionalities for customers. </p>
-          
-        </div>
-  
-        <div class="row">
-          <i class="fa-solid fa-2"></i>
-          <h3>Fullstack Developer</h3>
-          <h5><a target="_blank" style="color: #2fbf71;" href="https://debolinapackersandmovers.com/">Debolina Packers and Movers</a></h5> <br>
-          <p>Orchestrated the fullstack development for the business. Designed the entire website by myself ensuring a minimalist yet modern user experience. Ensured a responsive user interface, which guarantees great user experiences for users on a variety of devices.</p>
-        </div>
-  
+
+      <div class="row">
+        <i class="fa-solid fa-2"></i>
+        <h3>Fullstack Developer</h3>
+        <h5><a target="_blank" style="color: #2fbf71;" href="https://debolinapackersandmovers.com/">Debolina Packers and
+            Movers</a></h5> <br>
+        <p>Orchestrated the fullstack development for the business. Designed the entire website by myself ensuring a
+          minimalist yet modern user experience. Ensured a responsive user interface, which guarantees great user
+          experiences for users on a variety of devices.</p>
       </div>
-    </section>
+
+    </div>
+  </section>
 
 
   <!-- Freelancing -->
 
   <!-- CERTIFICATES SECTION -->
-  <section class="certificates">
-    <div class="center">
-      <h3>CERTIFICATES</h3>
+<section class="certificates" style="padding-bottom: 0; padding-top: 20px;">
+  <div class="center">
+    <h3>CERTIFICATES</h3>
+  </div>
+
+  <div class="container">
+    <div class="card__container">
+      <article class="card__article">
+        <img src="/css/cert1.png" alt="image" class="card__img" />
+        <div class="card__data">
+          <span class="card__description">Introduction to Frontend Development</span>
+          <a href="https://coursera.org/share/09b6c0b6da5b5a9e1115627f1ef4f693" class="card__button">Read More</a>
+        </div>
+      </article>
+      <article class="card__article">
+        <img src="/css/cert2.png" alt="image" class="card__img" />
+        <div class="card__data">
+          <span class="card__description">Advanced React</span>
+          <a href="https://coursera.org/share/1fdf9517b2d664689ca804b39b71aa66" class="card__button">Read More</a>
+        </div>
+      </article>
+      <article class="card__article">
+        <img src="/css/cert3.png" alt="image" class="card__img" />
+        <div class="card__data">
+          <span class="card__description">React Basics</span>
+          <a href="https://coursera.org/share/3e169e015bc5cd1488c388f9159a63ce" class="card__button">Read More</a>
+        </div>
+      </article>
+      <article class="card__article">
+        <img src="/css/cert4.png" alt="image" class="card__img" />
+        <div class="card__data">
+          <span class="card__description">Version Control</span>
+          <a href="https://coursera.org/share/b46f65d5ef416eb6dca34d7b451f2535" class="card__button">Read More</a>
+        </div>
+      </article>
     </div>
-
-    <div class="certificate-content">
-      <!-- 1st row -->
-      <div class="row" >
-        <div class="card_certificate">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <img src="css/cert1.png" alt="">
-              </div>
-            </div>
-            <div class="front">
-              
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-        
-              <div class="front-content">
-                <small class="badge">META</small>
-                <div class="description">
-                  <div class="title">
-                    <p class="title">
-                      <strong>Introduction to Frontend Development</strong>
-                    </p>
-                    <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                  </div>
-                  <p class="card_certificate-footer">
-                    <a target="_blank" href="https://coursera.org/share/09b6c0b6da5b5a9e1115627f1ef4f693">Verify Here</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2nd row -->
-      <div class="row">
-        <div class="card_certificate">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <img src="css/cert2.png" alt="">
-              </div>
-            </div>
-            <div class="front">
-              
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-        
-              <div class="front-content">
-                <small class="badge">META</small>
-                <div class="description">
-                  <div class="title">
-                    <p class="title">
-                      <strong>Advanced React</strong>
-                    </p>
-                    <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                  </div>
-                  <p class="card_certificate-footer">
-                    <a target="_blank" href="https://coursera.org/share/1fdf9517b2d664689ca804b39b71aa66">Verify Here</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3rd row -->
-      <div class="row">
-        <div class="card_certificate">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <img src="css/cert4.png" alt="">
-              </div>
-            </div>
-            <div class="front">
-              
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-        
-              <div class="front-content">
-                <small class="badge">META</small>
-                <div class="description">
-                  <div class="title">
-                    <p class="title">
-                      <strong>React Basics</strong>
-                    </p>
-                    <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                  </div>
-                  <p class="card_certificate-footer">
-                    <a target="_blank" href="https://coursera.org/share/3e169e015bc5cd1488c388f9159a63ce">Verify Here</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4th row -->
-      <div class="row">
-        <div class="card_certificate">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <img src="css/cert3.png" alt="">
-              </div>
-            </div>
-            <div class="front">
-              
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-        
-              <div class="front-content">
-                <small class="badge">META</small>
-                <div class="description">
-                  <div class="title">
-                    <p class="title">
-                      <strong>Version Control</strong>
-                    </p>
-                    <svg fill-rule="nonzero" height="15px" width="15px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero" fill="#20c997"><g transform="scale(8,8)"><path d="M25,27l-9,-6.75l-9,6.75v-23h18z"></path></g></g></svg>
-                  </div>
-                  <p class="card_certificate-footer">
-                    <a target="_blank" href="https://coursera.org/share/b46f65d5ef416eb6dca34d7b451f2535">Verify Here</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+  </div>
 </section>
+
+
   <!-- CERTIFICATES SECTION -->
+
+
+
+
+
+
+
+
+
+
 
   <!-- CTA -->
   <section class="cta" id="class">
     <h4>Have A Project In Your Mind ?</h4>
     <h2>Just Say <br>"Hello"</h2>
-    <a href="https://www.upwork.com/freelancers/~014264fce3182e7c55?mp_source=share" target="_blank" class="btn"> <strong><i class='bx bxl-upwork'></i>Hire Me</strong> </a>
+    <a href="https://www.upwork.com/freelancers/~014264fce3182e7c55?mp_source=share" target="_blank" class="btn">
+      <strong><i class='bx bxl-upwork'></i>Hire Me</strong> </a>
   </section>
 
 
@@ -547,32 +445,32 @@
     <div class="center">
       <h3>Hackathons Attended</h3>
     </div>
-  
+
     <div class="resume-content2 resume-content">
       <div class="box">
         <h6>Sept 2022</h6>
         <h4>MLH Hackathon</h4>
         <h5>https://mlh.com/</h5>
       </div>
-  
+
       <div class="box">
         <h6>April 2022</h6>
         <h4>Diversion 2k22</h4>
         <h5>IEM, Kolkata</h5>
       </div>
-  
+
       <div class="box">
         <h6>July 2023</h6>
         <h4>HackforBengal 2.0</h4>
         <h5>Sister Nivedita University, Kolkata</h5>
       </div>
-      
+
       <div class="box">
         <h6>June 2024</h6>
         <h4>HackforBengal 3.0</h4>
         <h5>JIS College of Engineering, Kalyani</h5>
       </div>
-      
+
       <div class="box">
         <h6>Aug 2024</h6>
         <h4>StatusCode1</h4>
@@ -581,7 +479,7 @@
 
     </div>
   </section>
-  
+
 
 
 
@@ -591,8 +489,10 @@
       <h3>Contact Me</h3>
       <br>
       <a href="https://www.facebook.com/r.biswasz" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com/rohan.pranto/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/rohan-biswas-178848239/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/rohan.pranto/" target="_blank"><i
+          class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/rohan-biswas-178848239/" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
       <a href="github.com/rohanpranto"><i class="fa-brands fa-square-github" target="_blank"></i></a>
     </div>
 
@@ -609,7 +509,7 @@
 
   <!-- COPYRIGHT -->
   <div class="copyright">
-<a href="play.html">Playground</a>
+    <a href="play.html">Playground</a>
     <p>Copyright © 2022 Portfolio, All Rights Reserved. <br> Created by Rohan Biswas.</p>
 
   </div>
@@ -620,8 +520,8 @@
   <script src="script.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
-    
-     const resumelink = 'https://drive.google.com/file/d/1M5VQl90DPHgkdc2Fup8V31Tg1IWSgemJ/view?usp=sharing';
+
+    const resumelink = 'https://drive.google.com/file/d/1M5VQl90DPHgkdc2Fup8V31Tg1IWSgemJ/view?usp=sharing';
 
 
 

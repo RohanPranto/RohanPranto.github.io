@@ -274,203 +274,170 @@ section {
   font-weight: 300;
   letter-spacing: 6px;
 }
-/* certificate */
-.card_certificate {
-  overflow: visible;
-  width: 494px;
-  height: 390px;
-}
 
-.content {
-  width: 100%;
-  height: 80%;
-  transform-style: preserve-3d;
-  transition: transform 700ms;
-  box-shadow: 0px 0px 10px 1px #000000ee;
-  border-radius: 15px;
-}
+/*===============certificate starts===============*/
 
-.front, .back {
-  background-color: #151515;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.back {
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.back::before {
-  position: absolute;
-  content: ' ';
+img {
   display: block;
-  width: 200%;
-  height: 50%;
-  background: linear-gradient(90deg, transparent, #30c272, #20844d, #1b673d, #15e271, transparent);
-  animation: rotation_481 5000ms infinite linear;
+  max-width: 100%;
+  height: auto;
 }
 
-.back-content {
+/*=============== CARD ===============*/
+.container {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+
+.card__container {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 328px;
+  border-radius: 0.8rem;
+  border: 5px solid #0b0b13;
+}
+
+.card__data {
+  width: 290px;
+  background-color: var(--main-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1rem;
   position: absolute;
-  width: 98%;
-  height: 98%;
-  background-color: #151515;
-  border-radius: 14px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.back-content img{
-  width: 100%;
-  height: 100%;
-  padding: 5px; 
-  border-radius: 14px;
-}
-.card_certificate:hover .content {
-  transform: rotateY(180deg);
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
 }
 
-@keyframes rotation_481 {
-  0% {
-    transform: rotateZ(0deg);
-  }
-
-  0% {
-    transform: rotateZ(360deg);
-  }
-}
-
-.front {
-  transform: rotateY(180deg);
-  color: white;
-}
-
-.front .front-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.front-content .badge {
-  background-color: #00000079;
-  padding: 2px 10px;
-  border-radius: 14px;
-  backdrop-filter: blur(8px);
-  width: fit-content;
-  font-size: large;
-  font-weight: bold;
-}
-
-.description {
-  box-shadow: 0px 0px 10px 5px #00000088;
-  width: 100%;
-  padding: 10px;
-  background-color: #00000099;
-  backdrop-filter: blur(5px);
+.card__description {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  background-color: white;
+  color: #060606;
+  padding: 8px;
   border-radius: 5px;
 }
 
-.title {
-  font-size: 11px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
 }
 
-.title p {
-  width: 100%;
+.card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
 }
 
-.card_certificate-footer {
-  color: #ffffff88;
-  margin-top: 5px;
-  font-size: 8px;
-}
-.card_certificate-footer a{
-  color: #2fbf71;
-  cursor:pointer;
-}
-.front .img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.card__button:hover {
+  text-decoration: underline;
 }
 
-.circle {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #ffbb66;
-  position: relative;
-  filter: blur(15px);
-  animation: floating 4600ms infinite linear;
+/* Hover Effects */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
-#bottom {
-  background-color: #ff8866;
-  left: 50px;
-  top: 0px;
-  width: 150px;
-  height: 150px;
-  animation-delay: -800ms;
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
 }
 
-#right {
-  background-color: #ff2233;
-  left: 160px;
-  top: -80px;
-  width: 30px;
-  height: 30px;
-  animation-delay: -1800ms;
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
 }
-.certificate-content{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
-  grid-gap: 1rem;
-  align-items: center;
-  margin-top: 4.4rem;
-}
-.certificate-content .row{
-  background: none;
-  height: 100%;
-  padding: 0;
-  cursor: default;
-}
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
 
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Animations */
+@keyframes show-data {
   50% {
-    transform: translateY(30px);
+    transform: translateY(-10rem);
   }
-
   100% {
-    transform: translateY(0px);
+    transform: translateY(-7rem);
   }
 }
 
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
 
-/* certificate */
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* Small devices: 1 card per row */
+@media screen and (max-width: 767px) {
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium and up: 2 cards per row */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: auto;
+  }
+  .card__img {
+    width: 450px;
+  }
+  .card__data {
+    width: 396px;
+    padding-inline: 1rem;
+  }
+}
+/* =========Certificate ends============= */
 .audio-sec{
   padding-top: 0;
   display: grid;
